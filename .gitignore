@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Django
+backend/.env
+backend/db.sqlite3
+*.sqlite3
+
+# Media (if you don't want uploaded files in Git)
+media/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node
+frontend/node_modules/
+
+# Build folders
+frontend/dist/
+frontend/build/
+dist/
+build/
+
+# Python caches
+.pytest_cache/
+.mypy_cache/
+
+# Coverage
+.coverage
+htmlcov/
