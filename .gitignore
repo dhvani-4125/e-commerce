@@ -1,47 +1,99 @@
+# -----------------------------
 # Python
+# -----------------------------
 __pycache__/
 *.py[cod]
+*$py.class
 *.pyo
 
-# Virtual environments
+# Virtual Environments
 venv/
 env/
 .venv/
+ENV/
 
+# -----------------------------
 # Django
-backend/.env
-backend/db.sqlite3
+# -----------------------------
+*.log
+db.sqlite3
 *.sqlite3
 
-# Media (if you don't want uploaded files in Git)
+# Django media uploads (optional)
 media/
 
-# VS Code
-.vscode/
+# Static files collected for production
+staticfiles/
 
-# PyCharm
-.idea/
+# -----------------------------
+# Environment Variables
+# -----------------------------
+.env
+*.env
 
-# Logs
-*.log
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Node
-frontend/node_modules/
-
-# Build folders
-frontend/dist/
-frontend/build/
-dist/
+# -----------------------------
+# Python packaging
+# -----------------------------
 build/
+dist/
+*.egg-info/
+.eggs/
 
-# Python caches
+# -----------------------------
+# Pytest / Coverage
+# -----------------------------
 .pytest_cache/
-.mypy_cache/
-
-# Coverage
 .coverage
 htmlcov/
+.tox/
+.nox/
+
+# -----------------------------
+# Type checking / Linting
+# -----------------------------
+.mypy_cache/
+.ruff_cache/
+.pyre/
+
+# -----------------------------
+# VS Code
+# -----------------------------
+.vscode/
+
+# -----------------------------
+# PyCharm
+# -----------------------------
+.idea/
+
+# -----------------------------
+# macOS
+# -----------------------------
+.DS_Store
+
+# -----------------------------
+# Windows
+# -----------------------------
+Thumbs.db
+desktop.ini
+
+# -----------------------------
+# Node / React
+# -----------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# React build outputs
+build/
+dist/
+
+# Vite cache
+.vite/
+
+# -----------------------------
+# Misc
+# -----------------------------
+*.swp
+*.swo
