@@ -1,6 +1,9 @@
+import {Link} from "react-router-dom";
+
 function ProductCard({ product }) {
     const BASEURL = import.meta.env.VITE_DJANGO_BASE_URL;
   return (
+    <Link to={`/products/${product.id}`} className="bg-white rounded-lg shadow-md hover:shadow-lg p-4 cursor-pointer transition-transform transform hover:scale-105">
     <div className="bg-white rounded-lg shadow-md hover:shadow-lg p-4">
       <img
         src={`${BASEURL}${product.image}`}
@@ -11,6 +14,7 @@ function ProductCard({ product }) {
       <p className="text-gray-700 mb-2">{product.description}</p>
       <p className="text-gray-900 font-medium">${product.price}</p>
     </div>
+    </Link>
   );
 }
 
